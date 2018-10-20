@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+  </head>
+
+  <body>
+    <p>
+      Please enter the amount you would like to shift the letters
+    </p>
+
+    <p>
+      Then, enter in the message you would like to encrypt
+    </p>
+    <form action="/cipher" method="get">
+      <div>
+        <label for="shift">Amount to shift:</label>
+        <input type="text" id="shift" name="shift">
+      </div>
+      
+      <div>
+        <label for="txt">Text to cipher:</label>
+        <textarea id="txt" name="txt" ></textarea>
+      </div>
+
+      <div class="button">
+        <button type="submit">Encrypt your message</button>
+      </div>
+    </form>
+
+    <p>
+      <%= 
+        unless message.nil?
+          "You entered the following text: #{txt}"
+        end
+      %>
+    </p>
+    <p>
+      <%= unless message.nil?
+            "The ciphered text is: #{message}"
+          end
+      %>
+    </p>
+  </body>
+</html>
