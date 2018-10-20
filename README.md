@@ -5,7 +5,7 @@
 <p> Must have Ruby 1.9+ </p>
 
 ## Installation
-    git clone #{url}
+    git clone https://github.com/ParamagicDev/sinatra_cipher.git
 
     cd /path/to/sinatra_cipher
 
