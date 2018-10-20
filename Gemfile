@@ -1,4 +1,5 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-require 'sinatra'
+gem 'sinatra'
+gem 'sinatra-contrib'
